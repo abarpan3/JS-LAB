@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout is here</title>
+    
+</head>
+<body>
+    <table id="res">
+
+    </table>
+
+    <script>
+
+        var html = "";
+        for(var i = 0; i<=99 ; i++ ){
+
+            if (i%10 == 0){
+                
+                html+="<tr>"
+                html+=("<td>" + i + "</td>")
+            }
+            
+            else if (i%10 == 9){
+                
+                html+=("<td>" + i + "</td>")
+                html+="</tr>"
+                
+            }
+
+            else{
+                html+=("<td>" + i + "</td>")
+            }
+
+        }
+
+        document.getElementById("res").innerHTML = html;
+    </script>
+</body>
+</html>
